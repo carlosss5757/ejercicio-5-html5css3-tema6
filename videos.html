@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title></title>
+    <link rel="stylesheet" href="reproductor.css">
+    <script src="reproductor.js"></script>
+  </head>
+  <body>
+    <div class="pagina">
+  <div id="page">
+    <div id="header">
+        <img src="logo.png" alt="Imagen del mensaje">
+        <h1>Curso de HTML5 y CSS3</h1>
+    </div>
+
+      <ul id="nav">
+        <li>
+          <img src="book.png" alt="Contenidos">
+          <nav style="color:  white"></nav>
+          <a href="index.html" class="videos">Contenidos</a>
+        </li>
+
+        <li>
+          <img src="film.png" alt="Vídeos">
+          <nav style="color: white">Videos</nav>
+        </li>    
+
+        <li>
+          <img src="mail.png" alt="Contacto">
+          <nav style="color: white"></nav>
+          <a href="curso.html" class="videos">Contacto</a>
+        </li>
+      </ul>
+    <header></header>
+    <main>
+      <div id="reproductor">
+    <video id="medio" width="720" height="400">
+      <source src="trailer.mp4">
+      <source src="trailer.ogg">
+    </video>
+    <div id="barra">
+    <div id="progreso"></div>
+    </div>
+  </div>
+  <nav>
+    <input type="button" id="reiniciar" value="reiniciar">
+    <input type="button" id="retrasar" value="&laquo;">
+    <input type="button" id="play" value="&#9658;">
+    <input type="button" id="adelantar" value="&raquo;">
+    <input type="button" id="silenciar" value="silenciar">
+    <label>Volumen</label>
+    <input type="button" id="menosVolumen" value="-">
+    <input type="button" id="masVolumen" value="+">
+  </nav>
+  </main>
+    <footer><div id="footer">
+      <p>Alejandro Amat Reina © 2014. Curso de HTML5 y CSS3.</p>
+      <p>Impartido para: <a href="CEFIRE - Específico de Formación Profesional">CEFIRE - Específico de Formación Profesional</a></p>
+    </div></footer>
+  </body>
+</html>

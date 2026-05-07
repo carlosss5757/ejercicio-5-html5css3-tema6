@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Curso de HTML5 y CSS3</title>
+  <meta name="description" content="Ejercicio HTML5 y CSS3">
+  <meta name="author" content="Tu nombre">
+  <link rel="stylesheet" href="estilos(curso).css">
+</head>
+
+<body>
+ <div class="pagina">
+  <div id="page">
+    <div id="header">
+        <img src="logo.png" alt="Imagen del mensaje">
+        <h1>Curso de HTML5 y CSS3</h1>
+    </div>
+
+      <ul id="nav">
+        <li>
+          <img src="book.png" alt="Contenidos">
+          <nav style="color:  white"></nav>
+          <a href="index.html" class="videos">Contenidos</a>
+        </li>
+
+        <li>
+          <img src="film.png" alt="Vídeos">
+          <nav style="color: white"></nav>
+          <a href="videos.html" class="videos">Vídeos</a>
+        </li>    
+
+        <li>
+          <img src="mail.png" alt="Contacto">
+          <nav style="color: white">Contacto</nav>
+        </li>
+      </ul>
+
+    <section id="content">
+    <form id="contacto">
+    <h2>Contáctenos</h2>
+    <ul>
+        <li>
+            <img src="icon-nombre.png" alt="nombre">
+            <input type="text" placeholder="Escriba su nombre" id="nombre-contacto" list="nombres">.
+            <datalist id="nombres">
+                <option value="alex">
+                <option value="juan">
+                <option value="ana">
+                <option value="pedro">
+            </datalist>
+        </li>
+        <li>
+            <img src="icon-correo.png" alt="email">
+            <input type="email" placeholder="Escriba su email" id="correo-contacto">.
+        </li>
+        <li>
+            <img src="icon-mensaje.png" alt="mensaje">
+            <textarea placeholder="Su mensaje..."></textarea>
+        </li>
+        <li>
+            <input type="submit" value="Enviar">
+        </li>
+    </ul>
+    </form>
+    </section>
+
+    <div id="footer">
+      <p>Alejandro Amat Reina © 2014. Curso de HTML5 y CSS3.</p>
+      <p>Impartido para: <a href="CEFIRE - Específico de Formación Profesional">CEFIRE - Específico de Formación Profesional</a></p>
+    </div>
+  </div>
+ </div>
+ <script src="contacto.js"></script>
+</body>
+</html>

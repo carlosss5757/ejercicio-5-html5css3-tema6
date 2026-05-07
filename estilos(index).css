@@ -1,0 +1,285 @@
+/* Reiniciar márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(circle at center, #ffffff 0%, #cecece 200%);
+  background-color: #8b0000;
+  margin: 0;
+  padding: 20px 0;
+}
+
+#page {
+  width: 960px;
+  background-color: white;
+  border: 10px solid #cc0000;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Cabecera */
+#header {
+  background: linear-gradient(10deg, white, rgb(8, 162, 233));
+  border: 1px solid #999;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+}
+
+.pagina
+{
+  width: 900px;
+  margin: 0 auto;
+}
+
+div 
+{
+  box-shadow: 10px 10px 10px gray;
+  border-radius: 20px;
+}
+
+h2 
+{
+  text-shadow: 2px 2px 2px gray;
+  margin: 15px 0;
+}
+
+/* Navegación */
+#nav {
+  background-color: #f1b306;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 80px;
+  margin: 0;
+  border-top: 8px solid black;
+}
+
+#nav ul {
+  list-style: none;
+}
+
+#nav li {
+  display: block;
+  list-style: none;
+  text-align: center;
+}
+
+/* Contenido principal */
+#content {
+  background: #FFF;
+  border-right: 1px solid #CCC;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 50%;
+  gap: 90px;
+}
+
+.tarjeta
+{
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movil-superior
+{
+  border-width: 15px 15px 0 15px; 
+  border-style: solid; 
+  border-image-source: url(movil.png); 
+  border-image-slice: 45;
+  border-image-repeat: stretch;
+  height: 10px;
+  display: block;
+}
+
+.movil-contenido
+{
+  background-color: white;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-image-source: url(movil.png);
+  border-image-slice: 45 45 45 45;
+  border-image-width: 0 15px 0 15px;
+  border-image-repeat: stretch;
+  padding: 10px 25px;
+  text-align: center;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
+.movil-inferior
+{
+  border-width: 0 15px 15px 15px; 
+  border-style: solid; 
+  border-image-source: url(movil.png); 
+  border-image-slice: 45;
+  border-image-repeat: stretch;
+  height: 10px;
+  display: block;
+}
+
+.movil-contenido img
+{
+  width: 100%;
+}
+
+.movil {
+    position: relative;
+}
+
+.chincheta {
+    width: 35px !important;
+    height: 35px !important;
+    position: absolute;
+    top: -55px;
+    left: 55px;
+    z-index: 10;
+}
+
+#color{
+    color: gray;
+}
+
+/* Barra lateral */
+#aside {
+  float: left;
+  width: 20%;
+  background: #c4c2c2;
+  padding: 15px;
+}
+/* Para poner al sitio los comentarios*/
+#aside2 {
+  float: right;
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Artículos */
+.article {
+  border: 10px solid transparent;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-image: url(movil.png);
+  margin: 20px;
+}
+
+article img
+{
+  max-width: 100%;
+  height: auto;
+}
+
+/* Para los publicados */
+.article2 {
+  color: gray;
+  margin-bottom: 1px;
+  padding: 5px;
+}
+
+.article_header {
+  background: #FFFBB9;
+  padding: 10px;
+}
+
+.article_footer {
+  background: #EEE;
+  padding: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.article_footer2 {
+  background: #a5a4a4;
+  padding: 1px;
+  font-size: 12px;
+  color: #c0bebe;
+}
+
+.article_footer3 {
+  float: right;
+  width: 20%;
+  padding: 5px;
+  font-size: 15px;
+  color: #000000;
+}
+
+/* Pie de página */
+#footer {
+  clear: both;
+  background: #ffffff;
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 0;
+  background: linear-gradient(10deg, white, rgb(8, 162, 233));
+  color: white;
+  border-top: 8px solid black;
+}
+
+@media (max-width: 1024px) {
+    #page {
+        width: 90%;
+        min-width: 320px;
+    }
+
+    #header {
+        font-size: 0.7em;
+    }
+
+    #page > ul#nav > li {
+        margin: 0% 8% 2% 8%;
+    }
+}
+
+@media (max-width: 700px) {
+    #page > ul#nav > li {
+        margin: 0% 4% 1% 4%;
+    }
+}
+
+#nav > a {
+    display: none;
+}
+
+@media (max-width: 475px) {
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    /* Mostrar enlace hamburguesa */
+    #nav > a {
+        display: block;
+        background-image: url('menu.png');
+        background-repeat: no-repeat;
+        background-position: center 10px;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    /* Ocultar los li del menú por defecto */
+    #nav > li {
+        display: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Cuando el nav tenga la clase desplegado, mostrar los li */
+    #nav.desplegado > li {
+        display: block;
+    }
+}

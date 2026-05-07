@@ -1,0 +1,222 @@
+/* Reiniciar márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(circle at center, #ffffff 0%, #cecece 200%);
+  background-color: #8b0000;
+  margin: 0;
+  padding: 20px 0;
+}
+
+#page {
+  width: 960px;
+  background-color: white;
+  border: 10px solid #cc0000;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Cabecera */
+#header {
+  background: rgb(38, 128, 231);
+  border: 1px solid #999;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.pagina
+{
+  width: 900px;
+  margin: 0 auto;
+}
+
+div 
+{
+  box-shadow: 10px 10px 10px gray;
+  border-radius: 20px;
+}
+
+h2 
+{
+  text-shadow: 2px 2px 2px gray;
+  margin: 15px 0;
+}
+
+/* Navegación */
+#nav {
+  background-color: #f1b306;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 150px;
+  margin: 0;
+  border-top: 8px solid black;
+}
+
+#nav ul {
+  list-style: none;
+}
+
+#nav li {
+  display: block;
+  list-style: none;
+  text-align: center;
+}
+
+/* Contenido principal */
+#content {
+  min-height: 400px;
+  padding: 0;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+  align-items: flex-start;
+  width: 100%;
+  background-image: url(fondoForm.jpg);
+  border-radius: 0;
+}
+
+/* Pie de página */
+#footer {
+  clear: both;
+  background: #ffffff;
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+  border-radius: 0;
+  background: rgb(38, 128, 231);
+  color: white;
+  border-top: 8px solid black;
+}
+
+#contacto {
+  background: rgba(200, 200, 200, 0.85);
+  padding: 35px;
+  width: 575px;
+  margin: 30px auto 30px auto;
+  border-radius: 10px;
+  position: relative;
+  padding-top: 60px;
+}
+
+#contacto h2 {
+  font-family: 'Segoe Script', cursive;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #333;
+  font-style: italic;
+  position: absolute;
+  top: -40px;
+  right: -10px;
+}
+
+#contacto ul {
+  list-style: none;
+}
+
+#contacto li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+#contacto img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #888;
+}
+
+#contacto input[type=text],
+#contacto input[type=email]
+{
+  color: black;
+  border-radius: 4px;
+  padding: 6px 10px;
+  width: 275px;
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #d4d4d4;
+  border: 1px solid #888;
+}
+
+#contacto textarea {
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding: 6px 10px;
+  width: 430px;
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: transparent;
+}
+
+#contacto textarea {
+  height: 80px;
+  resize: none;
+}
+
+#contacto input[type=submit] {
+  background: #555;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 20px;
+  cursor: pointer;
+}
+
+#contacto input[type=submit]:hover {
+  background: #333;
+}
+
+#contenido-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 30px;
+  width: 420px;
+}
+
+/* =============================================
+   MEDIA QUERY: máximo 1024px
+   ============================================= */
+@media (max-width: 1024px) {
+
+    #contacto {
+        margin: 4%;
+        width: 58%;
+        padding: 2% 4%;
+    }
+
+    #contacto h2 {
+        position: static;
+        padding: 0% 1%;
+        margin: 2% 0%;
+    }
+
+    #contacto input:not([type=submit]) {
+        height: 5%;
+        width: 55%;
+    }
+
+    #contacto input:not([type=submit]):focus {
+        width: 61%;
+    }
+
+    #contacto textarea {
+        width: 75%;
+    }
+
+    #contacto input[type=submit] {
+        display: block;
+    }
+}
